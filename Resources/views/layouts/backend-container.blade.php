@@ -1,5 +1,9 @@
 @extends('core::partials.template.html')
 
+@section('head.style')
+    @include('core::partials.quickfixes.MenuLeftItemsPanel')
+@stop
+
 @section('content.main')
       <div class='container'>
       <div class='row'>
