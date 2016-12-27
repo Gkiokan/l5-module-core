@@ -11,3 +11,8 @@
     .panel-menu .panel-body {
         padding:0px;
     }
+
+
+    .space_200 { display:block; height:200px; }
+    .space_100 { display:block; height:100px; }
+    .space_50 { display:block; height:50px; }
