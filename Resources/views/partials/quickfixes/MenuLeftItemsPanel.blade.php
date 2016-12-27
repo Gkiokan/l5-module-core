@@ -3,6 +3,7 @@
     }
     .panel-menu .list-group .list-group-item {
         border:0px;
+        border-radius:0px;
         padding:5px 15px;
         cursor:pointer;
     }

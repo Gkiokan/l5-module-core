@@ -2,6 +2,7 @@
 
 namespace Gkiokan\Core\Providers;
 
+use \Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class CoreServiceProvider extends ServiceProvider
@@ -32,8 +33,18 @@ class CoreServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->registerAliase();
     }
+
+
+    /*
+        Register Aliase
+    */
+    protected function registerAliase(){
+        $loader = AliasLoader::getInstance();
+        $loader->alias('Menu', '\Gkiokan\Core\Helpers\Menu');
+    }
+
 
     /**
      * Register config.
