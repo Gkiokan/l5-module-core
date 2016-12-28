@@ -24,6 +24,7 @@ class CoreServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
+        $this->registerHelpers();
     }
 
     /**
@@ -34,6 +35,14 @@ class CoreServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerAliase();
+    }
+
+
+    /*
+        Register Helpers
+    */
+    protected function registerHelpers(){
+        include_once __DIR__ . '/../Helpers/validator.php';
     }
 
 
