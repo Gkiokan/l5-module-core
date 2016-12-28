@@ -10,6 +10,10 @@
             @include('core::partials.navigation.full')
         @show
 
+        @section('content.info')
+            @include('core::partials.template.info_panel')
+        @show
+
         @section('content.main')
             @yield('content')
         @show
