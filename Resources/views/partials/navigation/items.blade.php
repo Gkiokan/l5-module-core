@@ -1,8 +1,13 @@
+
+<li class="dropdown-header">Profile</li>
 <li> <a href="{{ route('profile.index') }}"> Profile Settings</a></li>
-<li> <a href='#'> Worsk</a> </li>
 
-<li class='seperator'></li>
+<li class="dropdown-header">Company</li>
+<li> <a href="{{ route('company.index') }}"> My company </a></li>
+<li> <a href="{{ route('company.index') }}"> Joined companies  </a></li>
+<li> <a href="{{ route('company.index') }}"> Join requests </a></li>
 
+<li role="separator" class="divider"></li>
 <li>
     <a href="{{ url('/logout') }}"
         onclick="event.preventDefault();
