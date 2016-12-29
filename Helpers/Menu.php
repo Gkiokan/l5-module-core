@@ -29,6 +29,12 @@ class Menu {
            if($found) return true;
         endif;
 
+        // Quickfix for string array conversion
+        if(!is_array($or)):
+            $na = [$or];
+            $or = $na;
+        endif;
+
         // Last but not least, this is the condition if the $or is an array
         // We will directly search for the route value and compare it against
         return (array_search($routeName, $or)) !== false ? true : false;
