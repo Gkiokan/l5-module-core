@@ -21,3 +21,7 @@
 <style>
     @yield('head.style')
 </style>
+
+@if(env('THEME') == 'material')
+  @include('core::partials.theme.bootstrap-material')
+@endif
